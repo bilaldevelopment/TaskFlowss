@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow - Modern Project & Task Management",
+  "description": "A premium full-stack task and project management platform with real-time Kanban boards, workload analytics, team collaboration, and role-based permissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

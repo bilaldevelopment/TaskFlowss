@@ -1,0 +1,526 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin1",
+      "name": "Alex Rivers",
+      "email": "alex.admin@taskflow.dev",
+      "passwordHash": "$2b$10$PUCgT/mFdWKrkZJKIcHUUeP7MC/yChpIvP76NuTDlnhTpKh3gjPoO",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+      "title": "Workspace Administrator",
+      "department": "Engineering Leadership",
+      "isActive": true,
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "usr_pm1",
+      "name": "Sarah Chen",
+      "email": "sarah.pm@taskflow.dev",
+      "passwordHash": "$2b$10$PUCgT/mFdWKrkZJKIcHUUeP7MC/yChpIvP76NuTDlnhTpKh3gjPoO",
+      "role": "project_manager",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80",
+      "title": "Lead Product Manager",
+      "department": "Product Strategy",
+      "isActive": true,
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "usr_mem1",
+      "name": "David Kim",
+      "email": "david.dev@taskflow.dev",
+      "passwordHash": "$2b$10$PUCgT/mFdWKrkZJKIcHUUeP7MC/yChpIvP76NuTDlnhTpKh3gjPoO",
+      "role": "member",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+      "title": "Senior Frontend Engineer",
+      "department": "UI/UX Engineering",
+      "isActive": true,
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "usr_intern1",
+      "name": "Elena Rostova",
+      "email": "elena.intern@taskflow.dev",
+      "passwordHash": "$2b$10$PUCgT/mFdWKrkZJKIcHUUeP7MC/yChpIvP76NuTDlnhTpKh3gjPoO",
+      "role": "member",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+      "title": "Software Engineering Intern",
+      "department": "Core Team",
+      "isActive": true,
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "name": "Jordan Lee",
+      "email": "newuser_1792423528198@taskflow.dev",
+      "passwordHash": "$2b$10$ekLsLZvOFyumm521AqsMievzXZe1b4rIih1bY2soARFIsr/.z4fje",
+      "role": "member",
+      "title": "Team Member",
+      "department": "General",
+      "isActive": true,
+      "_id": "usr_wnklcxtrmvfeotwm",
+      "createdAt": "2026-10-19T15:25:28.294Z",
+      "updatedAt": "2026-10-19T15:25:28.294Z"
+    }
+  ],
+  "projects": [
+    {
+      "_id": "prj_mobile1",
+      "name": "Mobile App Redesign",
+      "key": "MOB",
+      "description": "Revamping the core iOS and Android client applications with sleek new design system, offline sync, and fast navigation.",
+      "status": "active",
+      "ownerId": "usr_pm1",
+      "color": "#4F46E5",
+      "startDate": "2026-10-04T15:25:27.804Z",
+      "targetDate": "2026-11-18T15:25:27.804Z",
+      "members": [
+        {
+          "userId": "usr_pm1",
+          "role": "owner"
+        },
+        {
+          "userId": "usr_mem1",
+          "role": "contributor"
+        },
+        {
+          "userId": "usr_intern1",
+          "role": "contributor"
+        },
+        {
+          "userId": "usr_admin1",
+          "role": "manager"
+        }
+      ],
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "prj_cloud1",
+      "name": "Cloud Infrastructure Migration",
+      "key": "OPS",
+      "description": "Transitioning mission-critical microservices to Kubernetes clusters with zero-downtime failover and automated CI/CD pipelines.",
+      "status": "active",
+      "ownerId": "usr_admin1",
+      "color": "#0EA5E9",
+      "startDate": "2026-09-19T15:25:27.804Z",
+      "targetDate": "2026-12-03T15:25:27.804Z",
+      "members": [
+        {
+          "userId": "usr_admin1",
+          "role": "owner"
+        },
+        {
+          "userId": "usr_mem1",
+          "role": "contributor"
+        }
+      ],
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "prj_portal1",
+      "name": "Enterprise Customer Portal v2",
+      "key": "PORT",
+      "description": "Building self-service customer portal with interactive telemetry dashboards and automated billing management.",
+      "status": "planning",
+      "ownerId": "usr_pm1",
+      "color": "#10B981",
+      "startDate": "2026-10-19T15:25:27.804Z",
+      "targetDate": "2026-12-18T15:25:27.804Z",
+      "members": [
+        {
+          "userId": "usr_pm1",
+          "role": "owner"
+        },
+        {
+          "userId": "usr_admin1",
+          "role": "manager"
+        },
+        {
+          "userId": "usr_intern1",
+          "role": "contributor"
+        }
+      ],
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "name": "Test Automation Project",
+      "key": "TST629",
+      "description": "A test project created by automation",
+      "status": "active",
+      "ownerId": "usr_admin1",
+      "color": "#3B82F6",
+      "members": [
+        {
+          "userId": "usr_admin1",
+          "role": "owner"
+        }
+      ],
+      "_id": "prj_jlrlfhx1mvfeotx0",
+      "createdAt": "2026-10-19T15:25:28.308Z",
+      "updatedAt": "2026-10-19T15:25:28.308Z"
+    }
+  ],
+  "tasks": [
+    {
+      "_id": "tsk_1",
+      "title": "Design high-fidelity design tokens & component library",
+      "description": "Finalize Tailwind color palettes, elevation levels, typography scales, and button component variants in Figma and sync to repository.",
+      "status": "completed",
+      "priority": "high",
+      "projectId": "prj_mobile1",
+      "assigneeId": "usr_mem1",
+      "creatorId": "usr_pm1",
+      "dueDate": "2026-10-18T15:25:27.804Z",
+      "tags": [
+        "Design",
+        "UI Kit",
+        "Sprint 1"
+      ],
+      "order": 1,
+      "estimatedHours": 16,
+      "actualHours": 14,
+      "createdAt": "2026-10-09T15:25:27.804Z",
+      "updatedAt": "2026-10-18T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_2",
+      "title": "Implement dark/light theme switching with zero flash",
+      "description": "Configure HTML class toggling, CSS variable persistence, and system preference detection with seamless transitions.",
+      "status": "completed",
+      "priority": "medium",
+      "projectId": "prj_mobile1",
+      "assigneeId": "usr_intern1",
+      "creatorId": "usr_mem1",
+      "dueDate": "2026-10-18T15:25:27.804Z",
+      "tags": [
+        "Frontend",
+        "Theme"
+      ],
+      "order": 2,
+      "estimatedHours": 8,
+      "actualHours": 7,
+      "createdAt": "2026-10-11T15:25:27.804Z",
+      "updatedAt": "2026-10-18T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_3",
+      "title": "Build drag-and-drop Kanban board with accessible fallback",
+      "description": "Interactive 4-column kanban board with column counters, visual drop targets, keyboard accessibility, and immediate backend persistence.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "projectId": "prj_mobile1",
+      "assigneeId": "usr_mem1",
+      "creatorId": "usr_pm1",
+      "dueDate": "2026-10-21T15:25:27.804Z",
+      "tags": [
+        "Kanban",
+        "Feature",
+        "High Priority"
+      ],
+      "order": 1,
+      "estimatedHours": 24,
+      "actualHours": 18,
+      "createdAt": "2026-10-14T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_4",
+      "title": "Setup automated Redis caching for high-load API endpoints",
+      "description": "Evaluate cache hit ratios and configure 5-minute TTL on project dashboard analytics aggregation queries.",
+      "status": "in_progress",
+      "priority": "high",
+      "projectId": "prj_cloud1",
+      "assigneeId": "usr_admin1",
+      "creatorId": "usr_admin1",
+      "dueDate": "2026-10-16T15:25:27.804Z",
+      "tags": [
+        "Backend",
+        "Performance",
+        "DevOps"
+      ],
+      "order": 2,
+      "estimatedHours": 12,
+      "actualHours": 9,
+      "createdAt": "2026-10-07T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_5",
+      "title": "Conduct security audit on JWT token validation & CORS policies",
+      "description": "Verify HMAC SHA-256 signature checks, expiry verification, timing attack protections, and helmet headers.",
+      "status": "in_review",
+      "priority": "high",
+      "projectId": "prj_cloud1",
+      "assigneeId": "usr_admin1",
+      "creatorId": "usr_pm1",
+      "dueDate": "2026-10-21T15:25:27.804Z",
+      "tags": [
+        "Security",
+        "Audit",
+        "Review"
+      ],
+      "order": 1,
+      "estimatedHours": 10,
+      "actualHours": 8,
+      "createdAt": "2026-10-15T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_6",
+      "title": "Create mobile navigation drawer and swipe gesture handlers",
+      "description": "Ensure smooth touch responsiveness on tablets and mobile viewports with accessible close button and backdrop click.",
+      "status": "in_review",
+      "priority": "medium",
+      "projectId": "prj_mobile1",
+      "assigneeId": "usr_intern1",
+      "creatorId": "usr_pm1",
+      "dueDate": "2026-10-26T15:25:27.804Z",
+      "tags": [
+        "Mobile",
+        "UX"
+      ],
+      "order": 2,
+      "estimatedHours": 12,
+      "actualHours": 10,
+      "createdAt": "2026-10-16T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_7",
+      "title": "Draft OpenAPI 3.0 specification for customer billing endpoints",
+      "description": "Document request schemas, response codes, and error models for external billing webhook integrations.",
+      "status": "todo",
+      "priority": "medium",
+      "projectId": "prj_portal1",
+      "assigneeId": "usr_pm1",
+      "creatorId": "usr_pm1",
+      "dueDate": "2026-10-26T15:25:27.804Z",
+      "tags": [
+        "API",
+        "Documentation"
+      ],
+      "order": 1,
+      "estimatedHours": 8,
+      "actualHours": 0,
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_8",
+      "title": "Implement task comments and threaded activity audit log",
+      "description": "Allow team members to collaborate directly on task detail drawers with timestamped comments and change events.",
+      "status": "todo",
+      "priority": "high",
+      "projectId": "prj_mobile1",
+      "assigneeId": "usr_mem1",
+      "creatorId": "usr_pm1",
+      "dueDate": "2026-10-29T15:25:27.804Z",
+      "tags": [
+        "Collaboration",
+        "Comments"
+      ],
+      "order": 2,
+      "estimatedHours": 14,
+      "actualHours": 0,
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "_id": "tsk_9",
+      "title": "Setup automated database backups with encryption at rest",
+      "description": "Configure daily snapshots with AES-256 encryption and automated 30-day retention policies.",
+      "status": "todo",
+      "priority": "urgent",
+      "projectId": "prj_cloud1",
+      "assigneeId": "usr_admin1",
+      "creatorId": "usr_admin1",
+      "dueDate": "2026-10-23T15:25:27.804Z",
+      "tags": [
+        "Database",
+        "Backup",
+        "Security"
+      ],
+      "order": 3,
+      "estimatedHours": 16,
+      "actualHours": 0,
+      "createdAt": "2026-10-19T15:25:27.804Z",
+      "updatedAt": "2026-10-19T15:25:27.804Z"
+    },
+    {
+      "title": "Implement OAuth Token Refresh",
+      "description": "Add auto-refresh on 401 responses",
+      "projectId": "prj_jlrlfhx1mvfeotx0",
+      "creatorId": "usr_admin1",
+      "priority": "high",
+      "status": "in_progress",
+      "dueDate": "2026-10-24T15:25:28.314Z",
+      "tags": [
+        "Backend",
+        "Security"
+      ],
+      "order": 1,
+      "estimatedHours": 6,
+      "actualHours": 0,
+      "_id": "tsk_hpp21q0jmvfeotxa",
+      "createdAt": "2026-10-19T15:25:28.318Z",
+      "updatedAt": "2026-10-19T15:25:28.323Z"
+    }
+  ],
+  "comments": [
+    {
+      "_id": "cmt_1",
+      "taskId": "tsk_3",
+      "authorId": "usr_pm1",
+      "content": "Please make sure keyboard arrow keys can also cycle between columns for full screen reader accessibility.",
+      "createdAt": "2026-10-17T15:25:27.804Z",
+      "updatedAt": "2026-10-17T15:25:27.804Z"
+    },
+    {
+      "_id": "cmt_2",
+      "taskId": "tsk_3",
+      "authorId": "usr_mem1",
+      "content": "Great point Sarah! Added keyboard controls and column quick-move badges to every card.",
+      "createdAt": "2026-10-18T15:25:27.804Z",
+      "updatedAt": "2026-10-18T15:25:27.804Z"
+    },
+    {
+      "_id": "cmt_3",
+      "taskId": "tsk_4",
+      "authorId": "usr_mem1",
+      "content": "Initial benchmarks show an 82% latency reduction when reading active task counts from cache!",
+      "createdAt": "2026-10-18T15:25:27.804Z",
+      "updatedAt": "2026-10-18T15:25:27.804Z"
+    },
+    {
+      "taskId": "tsk_hpp21q0jmvfeotxa",
+      "authorId": "usr_admin1",
+      "content": "Started working on unit tests for refresh logic.",
+      "_id": "cmt_4eograczmvfeotxj",
+      "createdAt": "2026-10-19T15:25:28.327Z",
+      "updatedAt": "2026-10-19T15:25:28.327Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_1",
+      "recipientId": "usr_mem1",
+      "senderId": "usr_pm1",
+      "title": "New Task Assignment",
+      "message": "You have been assigned to \"Build drag-and-drop Kanban board with accessible fallback\".",
+      "type": "task_assigned",
+      "read": false,
+      "link": "/tasks?taskId=tsk_3",
+      "createdAt": "2026-10-19T13:25:27.804Z"
+    },
+    {
+      "_id": "notif_2",
+      "recipientId": "usr_mem1",
+      "senderId": "usr_pm1",
+      "title": "New Comment",
+      "message": "Sarah Chen commented on \"Build drag-and-drop Kanban board with accessible fallback\".",
+      "type": "comment_added",
+      "read": false,
+      "link": "/tasks?taskId=tsk_3",
+      "createdAt": "2026-10-19T14:25:27.804Z"
+    },
+    {
+      "_id": "notif_3",
+      "recipientId": "usr_admin1",
+      "title": "Approaching Milestone",
+      "message": "Cloud Infrastructure Migration target completion is in 45 days.",
+      "type": "deadline_approaching",
+      "read": true,
+      "link": "/projects/prj_cloud1",
+      "createdAt": "2026-10-18T15:25:27.804Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "taskId": "tsk_hpp21q0jmvfeotxa",
+      "projectId": "prj_jlrlfhx1mvfeotx0",
+      "userId": "usr_admin1",
+      "action": "commented",
+      "details": {
+        "contentSnippet": "Started working on unit tests for refresh logic."
+      },
+      "_id": "act_6eq8s4bcmvfeotxk",
+      "createdAt": "2026-10-19T15:25:28.328Z"
+    },
+    {
+      "taskId": "tsk_hpp21q0jmvfeotxa",
+      "projectId": "prj_jlrlfhx1mvfeotx0",
+      "userId": "usr_admin1",
+      "action": "status_changed",
+      "details": {
+        "from": "todo",
+        "to": "in_progress"
+      },
+      "_id": "act_nba22zhjmvfeotxf",
+      "createdAt": "2026-10-19T15:25:28.323Z"
+    },
+    {
+      "taskId": "tsk_hpp21q0jmvfeotxa",
+      "projectId": "prj_jlrlfhx1mvfeotx0",
+      "userId": "usr_admin1",
+      "action": "created_task",
+      "details": {
+        "title": "Implement OAuth Token Refresh",
+        "status": "todo",
+        "priority": "high"
+      },
+      "_id": "act_pc71q0h2mvfeotxa",
+      "createdAt": "2026-10-19T15:25:28.318Z"
+    },
+    {
+      "projectId": "prj_jlrlfhx1mvfeotx0",
+      "userId": "usr_admin1",
+      "action": "created_project",
+      "details": {
+        "name": "Test Automation Project",
+        "key": "TST629"
+      },
+      "_id": "act_h87pnyqtmvfeotx0",
+      "createdAt": "2026-10-19T15:25:28.308Z"
+    },
+    {
+      "_id": "act_1",
+      "taskId": "tsk_3",
+      "projectId": "prj_mobile1",
+      "userId": "usr_pm1",
+      "action": "created_task",
+      "details": {
+        "title": "Build drag-and-drop Kanban board"
+      },
+      "createdAt": "2026-10-14T15:25:27.804Z"
+    },
+    {
+      "_id": "act_2",
+      "taskId": "tsk_3",
+      "projectId": "prj_mobile1",
+      "userId": "usr_mem1",
+      "action": "status_changed",
+      "details": {
+        "from": "todo",
+        "to": "in_progress"
+      },
+      "createdAt": "2026-10-16T15:25:27.804Z"
+    },
+    {
+      "_id": "act_3",
+      "taskId": "tsk_1",
+      "projectId": "prj_mobile1",
+      "userId": "usr_mem1",
+      "action": "status_changed",
+      "details": {
+        "from": "in_review",
+        "to": "completed"
+      },
+      "createdAt": "2026-10-18T15:25:27.804Z"
+    }
+  ]
+}
